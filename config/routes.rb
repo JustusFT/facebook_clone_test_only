@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :welcome, only: [:index]
   resources :users, only: [:new, :edit, :create, :update, :destroy]
   resources :sessions, only: [:new, :create, :destroy]
-  resources :statuses, only: [:index]
+  resources :statuses, only: [:index, :new, :edit, :create, :update, :destroy]
 
   root "welcome#index"
 
